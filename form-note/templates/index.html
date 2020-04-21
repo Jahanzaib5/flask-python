@@ -1,0 +1,25 @@
+{% extends 'template.html'%}
+
+{%block heading%}
+Note form page
+{%endblock%}
+
+{%block body%}
+
+	<ul>
+		{% for note in notes%}
+			<li>{{note}}</li>
+		{%endfor%}
+		
+	</ul>
+
+
+
+	<h1>Please submit the form</h1>
+	<form action="{{url_for('index')}}" method="POST">
+		<input type="text" name="note" placeholder="enter your note">
+		<button>Add Note</button>
+	</form>
+
+{%endblock%}
+
