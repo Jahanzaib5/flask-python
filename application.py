@@ -1,5 +1,6 @@
 #set FLASK_APP=hello.py(to set the env vaiable on terminal)
 #set FLASK_ENV=development to enable debug mode
+#flask run (to run the server)
 
 from flask import Flask, render_template
 
