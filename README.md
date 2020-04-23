@@ -1,2 +1,2 @@
 # flask-python
-flask web framework of python
+micro web framework of python
