@@ -9,9 +9,14 @@ class Flights:
 		print(f"Flight destination: {self.destination}")
 		print(f"Flgiht duration: {self.duration}")
 
+	def delay(self, amount):
+		self.duration+=amount
+
 
 def main():
 	f=Flights("Moscow", "Washigton", 890)
+	f.print_info()
+	f.delay(56)
 	f.print_info()
 
 if __name__ == "__main__":
